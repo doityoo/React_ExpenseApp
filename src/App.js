@@ -2,6 +2,7 @@
 import Expenses from "./component/Expenses/Expenses";
 import NewExpense from "./component/NewExpense/NewExpense";
 
+
 function App() {
 	// expenses 더미데이터
 	const expenses = [
@@ -31,6 +32,8 @@ function App() {
 		},
 	];
 
+	// NewExpense에서 전달하는 state 값을 받아오는 함수
+	// expense는 NewExpense 자식 컴포넌트에서 받아오는 state의 객체
 	const addExpenseHandler = expense => {
 		console.log("in app.js")
 		console.log(expense)
